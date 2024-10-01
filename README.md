@@ -8,7 +8,7 @@ You may need to extract notes from PowerPoint presentations, so you can save the
 The easiest way is to use the exe file from the bin folder (under W64). Otherwise, you can run the main file to launch the GUI (I recommend to setup a python 3.8 virtual environment) or the Notes_gen.py file after editing the ppt/pptx file path.
 
 <img src="screenshot_app.png"
-     alt="gui" width="600" height="450"
+     alt="gui" width="600" height="350"
       style="float: center"/>
 
 ## Roadmap
