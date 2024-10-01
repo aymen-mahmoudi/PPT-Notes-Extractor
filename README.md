@@ -22,6 +22,7 @@ The easiest way is to use the exe file from the bin folder (under W64). Otherwis
 ## Support and Contributing
 Let me know if you have any suggestions/ideas to enhance those scripts or add further settings. I want you to know that your suggestions are warmly appreciated.
 <br>
+<br>
 In case of a problem, it is strongly recommended that an issue be posted. For a more confidential demand, don't hesitate to email me.
 
 
