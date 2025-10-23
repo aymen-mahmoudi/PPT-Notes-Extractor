@@ -2,17 +2,10 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUiType 
 import sys
 
-
-
-
-
-
-
-from functions import*
+from pptx import Presentation
 
 
 #  import the gui :
-#ui, _ = loadUiType('gui.ui')      # from gui.ui
 from gui import Ui_Form  as ui    # from gui.py
 
 

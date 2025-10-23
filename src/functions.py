@@ -1,4 +1,0 @@
-from pptx import Presentation
-
-
-

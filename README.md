@@ -2,14 +2,43 @@
 
 
 ## Description
-You may need to extract notes from PowerPoint presentations, so you can save them as text or print them. This project will provide a python script and a GUI to fill this need.
+
+**PPT Notes Extractor** is a lightweight tool designed to extract speaker notes from PowerPoint presentations (`.ppt` / `.pptx`) and save them as plain text files.  
+This helps users quickly review or print notes.
+
 
 ## Usage
-The easiest way is to use the exe file from the bin folder (under W64). Otherwise, you can run the main file to launch the GUI (I recommend to setup a python 3.8 virtual environment) or the Notes_gen.py file after editing the ppt/pptx file path.
 
-<img src="screenshot_app.png"
-     alt="gui" width="600" height="350"
-      style="float: center"/>
+1. **Browse** to select the PowerPoint (`.ppt` or `.pptx`) file.  
+2. Click the **Export** button to extract and save the notes as a text file.  
+3. Click the **Delete** button to save a copy of the PowerPoint file **without notes**.
+
+<br>
+
+<img src="screenshot_app.png" alt="GUI Screenshot" width="700" height="350" style="display:block; margin:auto;"/>
+
+---
+
+## Installation
+
+1. Clone or download this repository.
+2. Install the required libraries using:
+
+   ```console
+   pip install -r requirements.txt
+   ```
+
+3. Run the `main.py` script from the `src` folder:
+
+   ```console
+   python src/main.py
+   ```
+
+> **Note:** The GUI has been tested with Python 3.8.
+It is recommended to use a Python 3.8 virtual environment.
+You can also run the Notes_gen.py file directly if you prefer to use the script instead of the GUI.
+
+
 
 ## Roadmap
  <ul>
@@ -19,12 +48,7 @@ The easiest way is to use the exe file from the bin folder (under W64). Otherwis
   <li>Create an online version</li>
 </ul> 
 
+
 ## Support and Contributing
-Let me know if you have any suggestions/ideas to enhance those scripts or add further settings. I want you to know that your suggestions are warmly appreciated.
-<br>
-<br>
-In case of a problem, it is strongly recommended that an issue be posted. For a more confidential demand, don't hesitate to email me.
-
-
-
+If you encounter any issues, please open an issue on GitHub. For confidential matters, feel free to email me directly. Suggestions and ideas for enhancing the scripts or adding features are warmly appreciated!  
 

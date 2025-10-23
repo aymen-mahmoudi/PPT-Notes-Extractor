@@ -15,7 +15,11 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(596, 219)
-        Form.setStyleSheet("background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(212, 54, 197, 29), stop:0.218905 rgba(251, 102, 0, 145), stop:0.375 rgba(255, 255, 0, 69), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));")
+        Form.setStyleSheet("background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,\n"
+"    stop:0 rgba(180,240,255,255),\n"
+"    stop:0.5 rgba(200,255,255,255),\n"
+"    stop:1 rgba(255,255,255,255));\n"
+"")
         self.frame = QtWidgets.QFrame(Form)
         self.frame.setGeometry(QtCore.QRect(9, 10, 571, 201))
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -25,12 +29,35 @@ class Ui_Form(object):
         self.verticalLayout.setObjectName("verticalLayout")
         self.label = QtWidgets.QLabel(self.frame)
         font = QtGui.QFont()
-        font.setFamily("Cascadia Mono SemiBold")
-        font.setPointSize(24)
+        font.setFamily("Consolas,Segoe UI,Calibri,sans-serif")
+        font.setPointSize(25)
         font.setBold(True)
-        font.setItalic(True)
-        font.setWeight(75)
+        font.setWeight(87)
         self.label.setFont(font)
+        self.label.setStyleSheet("/* 🌤 Background */\n"
+"QWidget {\n"
+"    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,\n"
+"        stop:0 rgba(235,250,255,255),\n"
+"        stop:1 rgba(195,225,250,255));\n"
+"}\n"
+"\n"
+"/* 🩶 Default labels */\n"
+"QLabel {\n"
+"    color: #1c1c1c;\n"
+"    color: rgb(24, 105, 255);\n"
+"    font-family: \"Consolas\", \"Segoe UI\", \"Calibri\", sans-serif;\n"
+"    font-size: 25pt;\n"
+"    background: transparent;\n"
+"    letter-spacing: 0.5px;\n"
+"font-weight: 700;\n"
+"    background: transparent;\n"
+"    padding: 4px;\n"
+"   \n"
+"    letter-spacing: 0.5px;\n"
+"}\n"
+"\n"
+"\n"
+"")
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label, 0, QtCore.Qt.AlignHCenter)
         self.gridLayout = QtWidgets.QGridLayout()
@@ -41,8 +68,38 @@ class Ui_Form(object):
         self.gridLayout.addWidget(self.path_lineEdit, 0, 1, 1, 1)
         self.browse_pushButton = QtWidgets.QPushButton(self.frame)
         self.browse_pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.browse_pushButton.setStyleSheet("background-color: rgb(255, 247, 20);\n"
-"font: 75 10pt \"Cascadia Mono\";\n"
+        self.browse_pushButton.setStyleSheet("QPushButton#browseButton {\n"
+"    color: #333333;\n"
+"    font-weight: bold;\n"
+"    border-radius: 10px;\n"
+"    padding: 6px 12px;\n"
+"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,\n"
+"        stop:0 rgba(255,240,100,255),\n"
+"        stop:1 rgba(255,210,40,255));\n"
+"    border: 1px solid #c89e00;\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    \n"
+"    border: 4px solid rgb(255, 170, 0);  /* Visible border */\n"
+"    font: 100 18pt \"MS Serif\";\n"
+"    border-radius: 14px;\n"
+"    \n"
+"    border-color: rgb(0, 79, 0,200);\n"
+"    padding: 6px;\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"QPushButton#browseButton:hover {\n"
+"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,\n"
+"        stop:0 rgba(255,250,140,255),\n"
+"        stop:1 rgba(255,220,60,255));\n"
+"}\n"
+"\n"
+"QPushButton#browseButton:pressed {\n"
+"    background-color: rgba(255,190,50,255);\n"
+"}\n"
 "")
         self.browse_pushButton.setObjectName("browse_pushButton")
         self.gridLayout.addWidget(self.browse_pushButton, 0, 0, 1, 1)
@@ -50,14 +107,35 @@ class Ui_Form(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.delete_pushButton = QtWidgets.QPushButton(self.frame)
-        self.delete_pushButton.setStyleSheet("background-color: rgb(255, 19, 19);\n"
-"font: 75 10pt \"Cascadia Mono\";")
+        self.delete_pushButton.setStyleSheet("QPushButton {\n"
+"   \n"
+"    background-color: rgb(142, 255, 49);\n"
+"    background-color: rgb(255, 205, 103);\n"
+"    border: 4px solid rgb(255, 170, 0);  /* Visible border */\n"
+"    font: 100 18pt \"MS Serif\";\n"
+"    border-radius: 14px;\n"
+"    \n"
+"    border-color: rgb(0, 79, 0,200);\n"
+"    padding: 6px;\n"
+"}\n"
+"\n"
+"")
         self.delete_pushButton.setObjectName("delete_pushButton")
         self.horizontalLayout.addWidget(self.delete_pushButton)
         self.export_pushButton = QtWidgets.QPushButton(self.frame)
         self.export_pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.export_pushButton.setStyleSheet("background-color: rgb(185, 255, 211);\n"
-"font: 75 10pt \"Cascadia Mono\";")
+        self.export_pushButton.setStyleSheet("QPushButton {\n"
+"   \n"
+"    background-color: rgb(142, 255, 49);\n"
+"    border: 4px solid rgb(255, 170, 0);  /* Visible border */\n"
+"    font: 100 18pt \"MS Serif\";\n"
+"    border-radius: 14px;\n"
+"    \n"
+"    border-color: rgb(0, 79, 0,200);\n"
+"    padding: 6px;\n"
+"}\n"
+"\n"
+"")
         self.export_pushButton.setObjectName("export_pushButton")
         self.horizontalLayout.addWidget(self.export_pushButton)
         self.verticalLayout.addLayout(self.horizontalLayout)
