@@ -34,9 +34,10 @@ This helps users quickly review or print notes.
    python src/main.py
    ```
 
-> **Note:** The GUI has been tested with Python 3.8.
-It is recommended to use a Python 3.8 virtual environment.
+> **Note:** The GUI has been tested with Python 3.11.
+Please ensure that all dependencies are compatible with your Python version.
 You can also run the Notes_gen.py file directly if you prefer to use the script instead of the GUI.
+A precompiled executable is also provided for Windows (x64) users and can be found in the bin folder.
 
 
 
